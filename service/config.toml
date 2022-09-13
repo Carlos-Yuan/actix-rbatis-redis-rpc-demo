@@ -1,0 +1,9 @@
+ip = '0.0.0.0'
+port = 9999
+secret = '8c031996f38e55c6899de6902e7070b5'
+prefix = 'api/v1'
+redis = ["redis://:ccc7a7ad90880ab6b81cd2f384638c58@127.0.0.1:6381/","redis://:ccc7a7ad90880ab6b81cd2f384638c58@127.0.0.1:6382/","redis://:ccc7a7ad90880ab6b81cd2f384638c58@127.0.0.1:6383/","redis://:ccc7a7ad90880ab6b81cd2f384638c58@127.0.0.1:6384/","redis://:ccc7a7ad90880ab6b81cd2f384638c58@127.0.0.1:6385/","redis://:ccc7a7ad90880ab6b81cd2f384638c58@127.0.0.1:6386/"]
+
+[rpc]
+host = '127.0.0.1'
+port = 8888

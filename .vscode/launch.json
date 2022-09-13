@@ -1,0 +1,30 @@
+{ 
+
+    "version": "0.2.0", 
+    "configurations": [ 
+        { 
+            "name": "provider", 
+            "preLaunchTask": "build_provider", 
+            "type": "cppvsdbg", 
+            "request": "launch", 
+            "program": "${workspaceFolder}/target/debug/provider.exe", 
+            "args": ["D:\\rust\\test\\provider\\config.toml"], 
+            "stopAtEntry": false, 
+            "cwd": "${workspaceFolder}/provider", 
+            "environment": [], 
+            "console": "internalConsole" 
+        },
+        { 
+            "name": "service", 
+            "preLaunchTask": "build_service", 
+            "type": "cppvsdbg", 
+            "request": "launch", 
+            "program": "${workspaceFolder}/target/debug/service.exe", 
+            "args": ["D:\\rust\\test\\service\\config.toml"], 
+            "stopAtEntry": false, 
+            "cwd": "${workspaceFolder}/service", 
+            "environment": [], 
+            "console": "internalConsole" 
+        }
+    ] 
+}

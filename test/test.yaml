@@ -1,0 +1,140 @@
+ImplItemMethod {
+    attrs: [],
+    vis: Public(
+        VisPublic {
+            pub_token: Pub,
+        },
+    ),
+    defaultness: None,
+    sig: Signature {
+        constness: None,
+        asyncness: Some(
+            Async,
+        ),
+        unsafety: None,
+        abi: None,
+        fn_token: Fn,
+        ident: Ident {
+            ident: "get",
+            span: #0 bytes(23337..23340),
+        },
+        generics: Generics {
+            lt_token: None,
+            params: [],
+            gt_token: None,
+            where_clause: None,
+        },
+        paren_token: Paren,
+        inputs: [
+            Receiver(
+                Receiver {
+                    attrs: [],
+                    reference: Some(
+                        (
+                            And,
+                            None,
+                        ),
+                    ),
+                    mutability: None,
+                    self_token: SelfValue,
+                },
+            ),
+            Comma,
+            Typed(
+                PatType {
+                    attrs: [],
+                    pat: Ident(
+                        PatIdent {
+                            attrs: [],
+                            by_ref: None,
+                            mutability: None,
+                            ident: Ident {
+                                ident: "args",
+                                span: #0 bytes(23347..23351),
+                            },
+                            subpat: None,
+                        },
+                    ),
+                    colon_token: Colon,
+                    ty: Reference(
+                        TypeReference {
+                            and_token: And,
+                            lifetime: None,
+                            mutability: None,
+                            elem: Path(
+                                TypePath {
+                                    qself: None,
+                                    path: Path {
+                                        leading_colon: None,
+                                        segments: [
+                                            PathSegment {
+                                                ident: Ident {
+                                                    ident: "UserGetDTO",    
+                                                    span: #0 bytes(23353..23363),
+                                                },
+                                                arguments: None,
+                                            },
+                                        ],
+                                    },
+                                },
+                            ),
+                        },
+                    ),
+                },
+            ),
+        ],
+        variadic: None,
+        output: Type(
+            RArrow,
+            Path(
+                TypePath {
+                    qself: None,
+                    path: Path {
+                        leading_colon: None,
+                        segments: [
+                            PathSegment {
+                                ident: Ident {
+                                    ident: "Result",
+                                    span: #0 bytes(23366..23372),
+                                },
+                                arguments: AngleBracketed(
+                                    AngleBracketedGenericArguments {        
+                                        colon2_token: None,
+                                        lt_token: Lt,
+                                        args: [
+                                            Type(
+                                                Path(
+                                                    TypePath {
+                                                        qself: None,        
+                                                        path: Path {        
+                                                            leading_colon: None,
+                                                            segments: [     
+                                                                PathSegment 
+{
+                                                                    ident: Ident {
+                                                                        ident: "User",
+                                                                        span: #0 bytes(23373..23377),
+                                                                    },      
+                                                                    arguments: None,
+                                                                },
+                                                            ],
+                                                        },
+                                                    },
+                                                ),
+                                            ),
+                                        ],
+                                        gt_token: Gt,
+                                    },
+                                ),
+                            },
+                        ],
+                    },
+                },
+            ),
+        ),
+    },
+    block: Block {
+        brace_token: Brace,
+        stmts: [],
+    },
+}

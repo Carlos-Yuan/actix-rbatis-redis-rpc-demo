@@ -1,0 +1,17 @@
+{ 
+    "version": "2.0.0", 
+    "tasks": [ 
+        { 
+            "label": "build_provider", 
+            "type": "shell", 
+            "command":"cargo", 
+            "args": ["build","-p","provider"] 
+        },
+        { 
+            "label": "build_service", 
+            "type": "shell", 
+            "command":"cargo", 
+            "args": ["build","-p","service"] 
+        } 
+    ] 
+}

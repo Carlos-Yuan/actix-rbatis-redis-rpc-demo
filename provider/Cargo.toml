@@ -1,0 +1,43 @@
+[package]
+name = "provider"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.20.1", features = ["full"] }
+
+actix-web = "4.0.1"
+
+serde_json = "1"
+serde = { version = "1.0", features = ["derive"] }
+rmp-serde = "0.15.5"
+
+chrono = { version = "0.4", features = ["serde"] }
+
+rbs = { version = "0.1"}
+rbatis = { version = "4.0.35"}
+rbdc-mysql = { version ="0.1"}
+
+log = "0.4.14"
+fast_log = "1.5.1"
+
+jwt = "0.16.0"
+sha2 = "0.10.2"
+hmac = "0.12.1"
+toml = "0.5.8"
+
+r2d2_redis_cluster="0.1.6"
+
+lazy_static = "1.4.0"
+
+futures-util = "0.3.23"
+
+util = {version="0.1.0",path="../util"}
+
+rpcx =  { version="0.3.0",path="D:/rust/rpcx-rs/rpcx" }
+
+syn = "0.15"
+quote = "0.6"
+macros = {version="0.1.0",path="../macros"}
